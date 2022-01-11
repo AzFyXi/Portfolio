@@ -27,6 +27,15 @@ body {
     background-position: center;
     background-repeat: no-repeat;
 }
+#bulle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+}
+
 nav{
     margin-top: 3vh;
     display: flex;
@@ -88,4 +97,114 @@ nav ul li a{
 .imagess img{
     height: 360px;
     width: auto;
+}
+a:hover{
+    color: #6CD722;
+}
+img:hover{
+  color: #6CD722;
+}
+
+/* //////////  CONTACT  ////////// */
+
+.contact-section {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), transparent), url(../img/fond3.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 80px 0;
+  text-align: center;
+}
+.inner-width {
+  max-width: 600px;
+  margin: auto;
+  padding: 20px 20px;
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 25px 45px rgba(255, 255, 255, 0.1);
+  border: 1px solid rgb(255, 255, 255, 0.25);
+  border-bottom: 1px solid rgb(255, 255, 255, 0.1);
+  border-right: 1px solid rgb(255, 255, 255, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+  backdrop-filter: blur(20px);
+}
+.contact-section h1 {
+  font-size: 20px;
+  color: #fff;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-weight: 400;
+}
+textarea::placeholder {
+  color: #fff;
+}
+input::placeholder {
+  color: #fff;
+}
+.name,
+.email,
+.message {
+  background: none;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid;
+  color: #fff;
+  padding: 10px 6px;
+  font-size: 14px;
+  margin-bottom: 40px;
+}
+.name {
+  float: left;
+  width: 270px;
+}
+.email {
+  float: right;
+  width: 270px;
+}
+.message {
+  min-width: 100%;
+  max-width: 100%;
+}
+.contact-section .button {
+  background: none;
+  color: #fff;
+  border: 1px solid #fff;
+  padding: 12px 40px;
+  border-radius: 8px;
+  text-transform: uppercase;
+  font-size: 14px;
+  transition: 0.4s linear;
+  cursor: pointer;
+}
+.contact-section .button:hover {
+  background: rgb(18,36,0);
+  background: linear-gradient(90deg, rgba(18,36,0,1) 0%, rgba(9,121,44,1) 46%, rgba(237,255,0,1) 100%);
+  color: #fff;
+}
+@media screen and (max-width: 600px) {
+  .name,
+  .email {
+    width: 100%;
+  }
+}
+
+.footer {
+  padding: 25px 0;
+  background-color: #000;
+  color: #fff;
+  width: 100%;
+}
+.footer-container{
+  display: flex;
+  
+}
+.right{
+  float: right;
+  color: #fff;
+  padding-right: 40px;
+}
+.left{
+  color: #fff;
+  padding-left: 40px;
 }
